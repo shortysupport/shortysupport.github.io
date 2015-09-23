@@ -1,16 +1,16 @@
 # Site settings
 
-title: Powerful New Theme for GitHub Pages | OpenTheme.co
-tagline: Amazing Websites and Hybrid Apps. Speedily!
-email: sehgal.manav@gmail.com
-copyright: Manav Sehgal
-keywords: open theme, github pages, semantic ui, single page apps
+title: Story Time
+tagline: Education through entertainment
+email: harrisvivan8@gmail.com
+copyright: Vivian Harris
+keywords: storry telling, staff development
 
 description: > # this means to ignore newlines until "url:". One indent required.
-  Powerful new theme featuring Semantic UI for speedily creating amazing websites and mobile-hybrid apps on GitHub Pages.
+  Story telling is not only for kids
 
 # the base hostname & protocol for your site
-url: "http://opentheme.co"
+url: "shortysupport.github.io"
 
 twitter_username: manavsehgal
 github_username:  manavsehgal
