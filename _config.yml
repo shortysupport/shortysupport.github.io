@@ -1,7 +1,7 @@
 # Site settings
 
 title: Story Time
-tagline: Education through entertainment
+tagline: Education Through Entertainment
 email: harrisvivan8@gmail.com
 copyright: Vivian Harris
 keywords: storry telling, staff development
@@ -12,10 +12,10 @@ description: > # this means to ignore newlines until "url:". One indent required
 # the base hostname & protocol for your site
 url: "shortysupport.github.io"
 
-twitter_username: manavsehgal
-github_username:  manavsehgal
+twitter_username:
+github_username:
 
-default_image: /img/opentheme-workflow.png
+default_image: /img/magic-tree-book.png
 
 # Pre-processing
 
