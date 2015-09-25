@@ -18,13 +18,17 @@
             <a class="item" href="http://semantic-ui.com/">Semantic UI Site</a>
           </div>
         </div>-->
-        <h5 class="ui inverted header">About</h5>
-        <div class="ui inverted link list">
-          <a class="item" href="https://github.com/open-start/opentheme">Get OpenTheme</a>
-          <a class="item" href="{% post_url /blog/2014-11-26-open-cloud-based-workflow-for-designing-your-website %}">Cloud Workflow</a>
-          <a class="item" href="{% post_url /blog/2014-12-2-data-driven-web-apps-using-github %}">Data Apps</a>
+        <div class="column">
+          <h5 class="ui inverted header">About</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://github.com/open-start/opentheme">Get OpenTheme</a>
+            <a class="item" href="{% post_url /blog/2014-11-26-open-cloud-based-workflow-for-designing-your-website %}">Cloud Workflow</a>
+            <a class="item" href="{% post_url /blog/2014-12-2-data-driven-web-apps-using-github %}">Data Apps</a>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="six wide column">
       <div class="ui two column stackable grid">
         <div class="column">
           <h5 class="ui inverted header">Social</h5>
@@ -33,20 +37,19 @@
             <a class="item" href="https://linkedin.com/in/{{ site.linkedin_username }}"><i class="linkedin icon"></i> LinkedIn</a>
           </div>
         </div>
-      </div>
-      <div class="column">
-        <h5 class="ui inverted header">Contact Us</h5>
-        <addr>
-          123 Your Address Here <br>
-          NM, Albuquerque <br>
-        </addr>
-        <p>(505) 123-4567</p>
+        <div class="column">
+          <h5 class="ui inverted header">Contact Us</h5>
+          <addr>
+            123 Your Address Here <br>
+            NM, Albuquerque <br>
+          </addr>
+          <p>(505) 123-4567</p>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="ui center aligned segment copyright">
-    <i class="world icon"></i> Copyright &copy; {{ site.time | date: "%Y" }}, {{ site.copyright }}.
-  </div>
 </div>
+
+<div class="ui center aligned segment copyright">
+  <i class="world icon"></i> Copyright &copy; {{ site.time | date: "%Y" }}, {{ site.copyright }}.
 </div>
