@@ -85,12 +85,12 @@ h1, h2, h3, h4, h5 {
   margin: 1em; }
 
 .global .slim-header-light {
-  text-align: center;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   padding: 0;
-  margin: 0; }
+  margin: 0; 
+  text-align: center;}
 
 /* Source: http://markdotto.com/playground/3d-text/ */
 .global .header-3d-center {
