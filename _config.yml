@@ -1,13 +1,13 @@
 # Site settings
 
-title: Story Time
-tagline: Education Through Entertainment
+title: Harris and Associates
+tagline: Enchanting Entertainment and Education
 email: harrisvivan8@gmail.com
 copyright: Vivian Harris
-keywords: storry telling, staff development
+keywords: storytelling, staff development, speaking engagements
 
 description: > # this means to ignore newlines until "url:". One indent required.
-  Story telling is not only for kids.
+  Storytelling is not only for kids.
 
 # the base hostname & protocol for your site
 url: "shortysupport.github.io"
