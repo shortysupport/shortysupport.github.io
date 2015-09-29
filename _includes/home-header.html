@@ -2,19 +2,17 @@
 <div class="ui masthead segment blue-round-gradient">
   <div class="ui page grid">
     <div class="column"> 
-        {% include menu.html %}
-        <h1 class="header-3d header-3d-center">{{ site.tagline }}</h1>      
-          <div class="two column row">
-            <div class="column">
-              <img src="/img/wand.png" alt="Wand" style="width:45px;height:75px;">
-            </div>
-            <div class="column">
-              <center>
-              <h2 class="slim-header-light">{{ site.description }}</h2>
-              </center>
-            </div>
-          </div> <!-- .row -->
+      {% include menu.html %}
+      <h1 class="header-3d header-3d-center">{{ site.tagline }}</h1>
     </div>
-  </div>
+  </div>      
+  <div class="ui four column centered grid">
+    <div class="column">
+      <img src="/img/wand.png" alt="Wand" style="width:45px;height:75px;">
+    </div>
+    <div class="column">
+        <h2 class="slim-header-light">{{ site.description }}</h2>
+    </div>
+  </div> <!-- .row -->
 </div>
 <!-- /masthead -->
