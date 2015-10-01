@@ -11,11 +11,11 @@
 }
 
 p:first-child:first-letter {
-	font-size: 48px;
+	font-size: 60px;
 	float: left;
 	padding: 5px;
 	font-family: 'dearest_openregular';
-	background-color: #00ced1;
+	background-color: #000000;
 	margin-right: 10px;
 	color: #fff;
 	border-radius: 5px;
