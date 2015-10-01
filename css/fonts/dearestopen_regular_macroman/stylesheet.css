@@ -25,4 +25,5 @@ p:first-child:first-letter {
 }
 
 dt {
-  font-weight: bold;}
+  font-weight: bold;
+  margin-top: 10px;}
