@@ -464,5 +464,14 @@ h1, h2, h3, h4, h5 {
 
 }
 p:first-child:first-letter {
-    font-size: 50px;
+    font-size: 72px;
+    float: left;
+    padding: 10px;
+    height: 64px;
+    font-family: 'dearest_openregular';
+    background-color: #7F7664;
+    margin-right: 10px;
+    color: white;
+    border-radius: 5px;
+    line-height: 70px;
 }
