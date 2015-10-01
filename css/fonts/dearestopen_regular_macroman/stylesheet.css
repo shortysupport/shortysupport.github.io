@@ -13,10 +13,10 @@
 p:first-child:first-letter {
 	font-size: 72px;
 	float: left;
-	padding-top: 2px;
+	padding-top: 3px;
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-bottom: 1px;
+	padding-bottom: 0px;
 	font-family: 'dearest_openregular';
 	background-color: #000000;
 	margin-right: 5px;
