@@ -18,5 +18,8 @@ p:first-child:first-letter {
 	background-color: #000000;
 	margin-right: 5px;
 	color: #fff;
-	border-radius: 0px;
+	border-radius: 10px;
 }
+
+dt {
+  font-weight: bold;}
