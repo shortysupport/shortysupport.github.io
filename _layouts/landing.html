@@ -19,7 +19,8 @@
         {% else %}
           {% include landing-header.html %}
         {% endif %}
-          <!--<div class="ui left internal attached rail">
+          <div class="ui left internal rail">
+          <div class="ui sticky">
            <div class="ui inverted segment">
             <h4>Testimonials</h4>
             <p>
@@ -31,7 +32,8 @@
             <i>-Rick Sanchez</i>
             </p>
           </div>
-         </div>-->
+          </div>
+         </div>
         {{ content }}
         {% include footer.html %}
     {% if site.pagebar %}
