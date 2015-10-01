@@ -13,10 +13,10 @@
 p:first-child:first-letter {
 	font-size: 72px;
 	float: left;
-	padding: 0px;
+	padding: 10px;
 	font-family: 'dearest_openregular';
 	background-color: #000000;
 	margin-right: 5px;
 	color: #fff;
-	border-radius: 5px;
+	border-radius: 0px;
 }
