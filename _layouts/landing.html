@@ -1,47 +1,49 @@
   {% include head.html %}
-  </head>
-  <link rel="stylesheet" href="/css/fonts/dearestopen_regular_macroman/stylesheet.css">
-  <body class="global landing">
+</head>
+<link rel="stylesheet" href="/css/fonts/dearestopen_regular_macroman/stylesheet.css">
+<body class="global landing">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+        <![endif]-->
 
-    {% if site.facebook %}
-      {% include fb-setup.html %}
-    {% endif %}
-
-    {% if site.pagebar %}
-    {% include page-bar.html %}
-    <div class="pusher">
-    {% endif %}
-        {%if page.title == 'Home' %}
-          {% include home-header.html %}
-        {% else %}
-          {% include landing-header.html %}
+        {% if site.facebook %}
+        {% include fb-setup.html %}
         {% endif %}
-        <div class="ui feature vertical segment">
-          <div class="ui page grid">
-            <div class="two wide column">
-              <h4>Testimonials</h4>
-              <p>
-                I loved this so much it was really awesome.<br>
-                <i>-George Costanza</i>
-              </p>
-              <p>
-                She is very motivational she helped me a lot. I cant belive How I was doing before this.<br>
-                <i>-Rick Sanchez</i>
-              </p>
-            </div>
-            <div class="fourteen wide column quote">
-            {{ content }}
-            </div>
-        {% include footer.html %}
-    {% if site.pagebar %}
-    </div>
-    {% endif %}
 
-    {% include js.html %}
-    {% include embed-google-analytics.html %}
-  </body>
+        {% if site.pagebar %}
+        {% include page-bar.html %}
+        <div class="pusher">
+          {% endif %}
+          {%if page.title == 'Home' %}
+          {% include home-header.html %}
+          {% else %}
+          {% include landing-header.html %}
+          {% endif %}
+          <div class="ui feature vertical segment">
+            <div class="ui page grid">
+              <div class="two wide column">
+                <h4>Testimonials</h4>
+                <p>
+                  I loved this so much it was really awesome.<br>
+                  <i>-George Costanza</i>
+                </p>
+                <p>
+                  She is very motivational she helped me a lot. I cant belive How I was doing before this.<br>
+                  <i>-Rick Sanchez</i>
+                </p>
+              </div>
+              <div class="fourteen wide column quote">
+                {{ content }}
+              </div>
+            </div>
+          </div>
+          {% include footer.html %}
+          {% if site.pagebar %}
+        </div>
+        {% endif %}
 
-</html>
+        {% include js.html %}
+        {% include embed-google-analytics.html %}
+      </body>
+
+      </html>
