@@ -31,8 +31,14 @@
                   <i>-Rick Sanchez</i>
                 </p>
               </div>
+              {% if page.title == 'Home' %}
+              <div class="thirteen wide column">
+              {% else %}
               <div class="thirteen wide column starback">
+              {% endif %}
                 {{ content }}
+              }
+              }
               </div>
             </div>
           {% include footer.html %}
