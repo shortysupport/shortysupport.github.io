@@ -3,15 +3,17 @@
 <div class="ui masthead segment blue-round-gradient">
   <div class="ui page grid">
     <div class="column">
+        {% include menu.html %}
+        <a href="/">
         <font face="dearest_openregular">
         <h1 class="ui inverted header">Harris and Associates</h1>
         </font>
-        {% include menu.html %}
-        <center><h1 class="ui inverted header">{{ site.tagline }}</h1></center>      
+        </a>
+        <center><h2 class="ui inverted header">{{ site.tagline }}</h1></center>      
           <div class="row">
             <div class="column">
               <center>
-              <h2 class="slim-header-light">{{ site.description }}</h2>
+              <h3 class="slim-header-light">{{ site.description }}</h2>
               </center>
             </div>
           </div> <!-- .row -->
