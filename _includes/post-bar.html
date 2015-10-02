@@ -2,21 +2,31 @@
 
     <div class="row">
       <div class="column">
-        <h3>Testimonials</h3>
-        <p>
-        <i>Her stories are really great my kids loved them.</i>
-        -George
-        </p>
+        <h3 class="ui inverted header">Get Free Updates</h3>
+        <div class="ui inverted divider"></div>
+        {% include embed-mailchimp.html tagline="Practical content strategies. Website best practices." button="Subscribe Now!" %}
       </div>
     </div>
 
     <div class="row">
       <div class="column">
-        <p>
-        <i>Something else good</i>
-        -Loren Brooks
-        </p>
+        <h3 class="ui inverted header">Related</h3>
+        <div class="ui inverted divider"></div>
+        {% include related-posts.html %}
       </div>
     </div>
-    
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">Tags</h3>
+        <div class="ui inverted divider"></div>
+        {% include site-tags.html %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3 class="ui inverted header">Categories</h3>
+        <div class="ui inverted divider"></div>
+        {% include site-categories.html %}
+      </div>
+    </div> <!-- /row -->
 </div>
