@@ -24,6 +24,11 @@ p:first-child:first-letter {
 	border-radius: 10px;
 }
 
+h1:first-child {
+	font-family: 'dearest_openregular';
+	color: #ffffff;
+}
+
 dt {
   font-weight: bold;
   margin-top: 10px;}
