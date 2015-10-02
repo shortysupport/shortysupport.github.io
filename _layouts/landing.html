@@ -10,6 +10,7 @@
         {% include fb-setup.html %}
         {% endif %}
 
+        {% include mobiletestimonts.html %}
         {% if site.pagebar %}
         {% include page-bar.html %}
         <div class="pusher">
@@ -20,10 +21,13 @@
           {% include landing-header.html %}
           {% endif %}
           <div class="ui segment" id="Testiomon-button">
-            <div class="left ui rail" style="min-height: 50px;">
-              <div class="ui sticky" style="width: 75px !important; height: 50px !important; left: 75px;">
-                <a class="mobile item pagebar" href="#"><i class="icon content"></i></a>
-                <a class="item pagebar" href="#"><i class="icon content"></i></a>
+            <div class="left ui rail">
+              <div class="ui sticky">
+                <form action="#">
+                <button class="ui icon button">
+                <i class="icon content"></i>
+                </button>
+                </form>
               </div>
             </div>
           </div>
