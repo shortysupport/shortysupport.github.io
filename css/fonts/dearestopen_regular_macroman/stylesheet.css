@@ -18,9 +18,9 @@ p:first-child:first-letter {
 	padding-right: 15px;
 	padding-bottom: 0px;
 	font-family: 'dearest_openregular';
-	background-color: #00ced1;
+	background-color: #fff;
 	margin-right: 5px;
-	color: #fff;
+	color: #00ced1;
 	border-radius: 10px;
 }
 
