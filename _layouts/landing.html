@@ -19,7 +19,26 @@
           {% else %}
           {% include landing-header.html %}
           {% endif %}
+            <!--<div class="ui padded grid">
+              <div class="three wide column quote">
+                <h4>Testimonials</h4>
+                <p>
+                  I loved this so much it was really awesome.<br>
+                  <i>-George Costanza</i>
+                </p>
+                <p>
+                  She is very motivational she helped me a lot. I cant belive How I was doing before this.<br>
+                  <i>-Rick Sanchez</i>
+                </p>
+              </div>
+              {% if page.title == 'Home' %}
+              <div class="thirteen wide column">
+              {% else %}
+              <div class="thirteen wide column starback">
+                {% endif %}-->
                 {{ content }}
+              <!--</div>
+            </div>-->
             {% include footer.html %}
             {% if site.pagebar %}
           </div>
