@@ -18,15 +18,10 @@ p:first-child:first-letter {
 	padding-right: 15px;
 	padding-bottom: 0px;
 	font-family: 'dearest_openregular';
-	background-color: #007b7d;
+	background-color: #00ced1;
 	margin-right: 5px;
 	color: #fff;
 	border-radius: 10px;
-}
-
-h1:first-child {
-	font-family: 'dearest_openregular';
-	color: #ffffff;
 }
 
 dt {
