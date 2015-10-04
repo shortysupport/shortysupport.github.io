@@ -101,6 +101,14 @@ h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0; }
 
+  .global .slim-header {
+  text-align: center;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0; }
+
 /* Source: http://markdotto.com/playground/3d-text/ */
 .global .header-3d-center {
   text-align: center; }
