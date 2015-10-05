@@ -47,7 +47,7 @@
               <!--</div>
             </div>-->
             {% if page.title != 'Contact' or 'About' %}
-            <div class="ui vertical segment">
+            <div class="ui inverted vertical segment">
               <div class="ui centered grid">
                 <div class="column">
                   <div id="quote"></div>
@@ -69,8 +69,11 @@
                       ];
                       var quote = quotes[Math.floor(Math.random() * quotes.length)];
                       document.getElementById("quote").innerHTML =
-                      '<i>' + quote.text + '</i>' + '<br>'
-                      '<p>' + quote.sig + '</p>';
+                      '<center>' + 
+                      '<i>' + quote.text + '</i>' +
+                      '<br>'+
+                      '<p>' + quote.sig + '</p>' +
+                      '<center>';
                     })();
                   </script>
                   {% endif %}
