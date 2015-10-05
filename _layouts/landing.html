@@ -1,5 +1,20 @@
   {% include head.html %}
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider-min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
 </head>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+    // Can also be used with $(document).ready()
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        touch: "true"
+      });
+    });
+    </script>
+
 <link rel="stylesheet" href="/css/fonts/dearestopen_regular_macroman/stylesheet.css">
 <body class="global landing">
     <!--[if lt IE 7]>
@@ -43,6 +58,34 @@
                 {{ content }}
               <!--</div>
             </div>-->
+            {%if page.title != 'contact' or 'about'%}
+            <div class="ui inverted vertical segment black-shine-gradient">
+              <div class="ui very relaxed stackable page grid">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <p>
+                        <i>I loved this so much it was really awesome.</i><br>
+                        -George Costanza
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i>She is very motivational she helped me a lot. This text makes this testimonial a bit longer so we can see how it looks.</i><br>
+                        -Rick Sanchez
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i>A very short testimonial</i><br>
+                        -Loren Brooks
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {% endif %}
           </div>
           {% include footer.html %}
           {% if site.pagebar %}
