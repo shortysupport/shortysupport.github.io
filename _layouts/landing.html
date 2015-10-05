@@ -47,7 +47,7 @@
               <!--</div>
             </div>-->
             {% if page.title != 'Contact' or 'About' %}
-            <div class="ui vertical segment grey">
+            <div class="ui vertical segment">
               <div class="ui centered grid">
                 <div class="column">
                   <div id="quote"></div>
@@ -55,21 +55,22 @@
                     (function() {
                       var quotes = [
                       {
-                        text: "<i>She is very motivational she helped me a lot. This text makes this testimonial a bit longer so we can see how it looks.</i><br>
-                        -Rick Sanchez",
+                        text: "She is very motivational she helped me a lot. This text makes this testimonial a bit longer so we can see how it looks."
+                        sig: "-Rick Sanchez",
                       },
                       {
-                        text: "<i>I loved this so much it was really awesome.</i><br>
-                        -George Costanza",
+                        text: "I loved this so much it was really awesome."
+                        sig: "-George Costanza",
                       },
                       {
-                        "<i>A very short testimonial</i><br>
-                        -Loren Brooks",
+                        text: "A very short testimonial"
+                        sig: "-Loren Brooks",
                       }
                       ];
                       var quote = quotes[Math.floor(Math.random() * quotes.length)];
                       document.getElementById("quote").innerHTML =
-                      '<p>' + quote.text + '</p>'
+                      '<i>' + quote.text + '</i>' + '<br>'
+                      '<p>' + quote.sig + '</p>';
                     })();
                   </script>
                   {% endif %}
