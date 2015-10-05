@@ -29,7 +29,7 @@
         {% include page-bar.html %}
         <div class="pusher">
           {% endif %}
-          {%if page.title == 'Home' %}
+          {% if page.title == 'Home' %}
           {% include home-header.html %}
           {% else %}
           {% include landing-header.html %}
@@ -58,33 +58,33 @@
                 {{ content }}
               <!--</div>
             </div>-->
-            {%if page.title != 'contact' or 'about'%}
-            <div class="ui inverted vertical segment black-shine-gradient">
-              <div class="ui very relaxed stackable page grid">
-                <div class="flexslider">
-                  <ul class="slides">
-                    <li>
-                      <p>
-                        <i>I loved this so much it was really awesome.</i><br>
-                        -George Costanza
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <i>She is very motivational she helped me a lot. This text makes this testimonial a bit longer so we can see how it looks.</i><br>
-                        -Rick Sanchez
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <i>A very short testimonial</i><br>
-                        -Loren Brooks
-                      </p>
-                    </li>
-                  </ul>
+            {% if page.title != 'Contact' or 'About' %}
+              <div class="ui inverted vertical segment black-shine-gradient">
+                <div class="ui very relaxed stackable page grid">
+                  <div class="flexslider">
+                    <ul class="slides">
+                      <li>
+                        <p>
+                          <i>I loved this so much it was really awesome.</i><br>
+                          -George Costanza
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <i>She is very motivational she helped me a lot. This text makes this testimonial a bit longer so we can see how it looks.</i><br>
+                          -Rick Sanchez
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <i>A very short testimonial</i><br>
+                          -Loren Brooks
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
             {% endif %}
           </div>
           {% include footer.html %}
