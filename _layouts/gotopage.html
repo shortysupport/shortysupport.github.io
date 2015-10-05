@@ -1,6 +1,9 @@
 {% include head.html %}
 </head>
 <body class="global landing">
+	{% if site.pagebar %}
+	{% include page-bar.html %}
+       	<div class="pusher">
     {% endif %}
     {% include landing-header.html %}
 		<div class="ui page grid starback">
@@ -57,6 +60,9 @@
 				</div>
 			</div>
 		</div>
+    {% if site.pagebar %}
+    	</div>
+    {% endif %}
     {% include footer.html %}
     {% include js.html %}
 </body>
