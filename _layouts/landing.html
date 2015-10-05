@@ -1,22 +1,9 @@
   {% include head.html %}
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider-min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 </head>
 
 <link rel="stylesheet" href="/css/fonts/dearestopen_regular_macroman/stylesheet.css">
 <body class="global landing">
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
-    <script type="text/javascript">
-    // Can also be used with $(document).ready()
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide",
-        touch: "true"
-      });
-    });
-    </script>
 
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -60,45 +47,43 @@
               <!--</div>
             </div>-->
             {% if page.title != 'Contact' or 'About' %}
-              <div class="ui inverted vertical segment black-shine-gradient">
-                <div class="ui very relaxed stackable page grid">
-                  <div class="flexslider">
-                    <ul class="slides">
-                      <li>
-                        <p>
-                          <i>I loved this so much it was really awesome.</i><br>
-                          -George Costanza
-                        </p>
-                        <img src="/img/icons/testimon-back.png" alt="background">
-                      </li>
-                      <li>
-                        <p>
-                          <i>She is very motivational she helped me a lot. This text makes this testimonial a bit longer so we can see how it looks.</i><br>
-                          -Rick Sanchez
-                        </p>
-                        <img src="/img/icons/testimon-back.png" alt="background">
-                      </li>
-                      <li>
-                        <p>
-                          <i>A very short testimonial</i><br>
-                          -Loren Brooks
-                        </p>
-                        <img src="/img/icons/testimon-back.png" alt="background">
-                      </li>
-                    </ul>
-                  </div>
+            <div class="ui vertical segment grey">
+              <div class="ui centered grid">
+                <div class="column">
+                  <div id="quote"></div>
+                  <script>
+                    (function() {
+                      var quotes = [
+                      {
+                        text: "<i>She is very motivational she helped me a lot. This text makes this testimonial a bit longer so we can see how it looks.</i><br>
+                        -Rick Sanchez",
+                      },
+                      {
+                        text: "<i>I loved this so much it was really awesome.</i><br>
+                        -George Costanza",
+                      },
+                      {
+                        "<i>A very short testimonial</i><br>
+                        -Loren Brooks",
+                      }
+                      ];
+                      var quote = quotes[Math.floor(Math.random() * quotes.length)];
+                      document.getElementById("quote").innerHTML =
+                      '<p>' + quote.text + '</p>'
+                    })();
+                  </script>
+                  {% endif %}
                 </div>
               </div>
-            {% endif %}
+            </div>
+            {% include footer.html %}
+            {% if site.pagebar %}
           </div>
-          {% include footer.html %}
-          {% if site.pagebar %}
-        </div>
-        {% endif %}
+          {% endif %}
 
 
-        {% include js.html %}
-        {% include embed-google-analytics.html %}
-      </body>
+          {% include js.html %}
+          {% include embed-google-analytics.html %}
+        </body>
 
-      </html>
+        </html>
