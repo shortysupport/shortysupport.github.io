@@ -110,6 +110,7 @@ h1, h2, h3, h4, h5 {
 
 .global .white-text {
   color: #fff;
+  background-color: #0099EE;
 }
 
 /* Source: http://markdotto.com/playground/3d-text/ */
